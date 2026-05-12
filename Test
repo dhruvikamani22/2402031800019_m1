@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" contant="width=device-width,initial-scale=1.0">
+        <title>This is title</title>
+    </head>
+    <body>
+        <p>  this is my first program</p>
+        <h1> heading 1</h1>
+        <h2> heading 2</h2>
+        <h3> heading 3</h3>
+        <h4> heading 4</h4>
+        <h5> heading 5</h5>
+        <h6> heading 6</h6>
+        <h1><b>  bold text </b><br>
+            <strong> strong text </strong><br>
+            <i> italic text</i><br>
+            <em> Emphasited text </em><br>
+            <mark> marked text</mark><br>
+            <small> small text</small><br>
+            <del> deleted text</del><br>
+            <ins> inserted text</itext>
+            <p> H <sub>2</sub>o</p><br>
+            <p> p<sup>3</sup></p><br>
+        </h1>
+        </body>
+</html>
+
