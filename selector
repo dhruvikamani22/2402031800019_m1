@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+         p,h3{
+            color:darkgoldenrod;
+        }
+        #id_selector{
+            color: black;
+            background-color: aliceblue;
+            text-decoration: underline;
+            text-align: center;
+        }
+        .class_selcetor{
+            color: rgb(0, 30, 255);
+            background-color: rgb(113, 172, 206);
+            text-decoration:dotted;
+            text-align:left;
+        }
+/* This will change h2 in div only */
+       div h2{ 
+        background-color: dimgray;
+       }
+    </style>
+</head>
+<body>
+<h1 id="id_selector"> This is underline and id slector example</h1>
+<h2 style="background-image:url(data:image/png;base64,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);"> Welcome</h2>
+ <div class="class_selcetor">
+        <h2>Section One</h2>
+        <p>This box uses the <span class="highlight">class_selcetor</span> class.</p>
+    </div>
+
+    <div class="class_selcetor">
+        <h2>Section Two</h2>
+        <p>This box also uses the <span class="highlight">class_selcetor</span> class because classes are reusable!</p>
+    </div>
+<p> Hello friends</p>
+<h3> How are you?</h3>
+</body>
+</html>
