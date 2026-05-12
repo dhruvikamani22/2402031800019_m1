@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" contant="width=device-width,initial-scale=1.0">
+        <title>This programfor image </title>
+    </head>
+    <body>
+       <img src="c:\Users\Student\Pictures\Saved Pictures\aesthetic-pictures.jpg">
+    </body>
+</html>
+
