@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3> Javascript Data types</h3>
+    <script>
+        var a=10;
+        var b=true;
+        var c=["Apple", "Banana", "Cherry"];
+        var d="dhruvi";
+        var e=null;
+        var f;
+        var g=10.5;
+        const h = {name: "Alice",age: 30};
+
+        document.write(typeof(a));
+        document.write("<br>"+typeof(b));
+        document.write("<br>"+typeof(c));
+        document.write("<br>"+typeof(d));
+        document.write("<br>"+typeof(e));
+        document.write("<br>"+typeof(f));
+        document.write("<br>"+typeof(g));
+        document.write("<br>"+typeof(h));
+
+    
+    </script>
+</body>
+</html>
