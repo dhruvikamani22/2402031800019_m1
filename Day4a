@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>My First Web Page</h1>
+<p id="demo"></p>
+
+<h2>JavaScript Variables</h2>
+
+<p>In this example, x, y, and z are variables.</p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<script>
+alert("Hello! This is your first JavaScript message.");
+document.getElementById("demo").innerHTML = "Hello World";
+
+var x = 15;
+var y = 10;
+var z = x + y;
+document.getElementById("demo1").innerHTML ="value of z(x+y) is: " + z;
+document.getElementById("demo2").innerHTML = x-y +" This is the x-y";
+document.getElementById("demo3").innerHTML ="value of z(x*y) is: " + x*y;
+document.getElementById("demo4").innerHTML ="value of z(x/y) is: " + x/y;
+</script>
+
+<script type="text/javascript" src="Day4.js"></script>
+
+</body>
+</html>
