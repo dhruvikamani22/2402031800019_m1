@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Functions Example</title>
+</head>
+<body>
+
+    <!-- getElementById -->
+    <h4>getElementById()</h4>
+    <input type="text" id="myText">
+    <button onclick="byId()">Submit By ID</button>
+    <br><br>
+    <!-- getElementsByName -->
+    <h4>getElementsByName()</h4>
+    <input type="text" name="myText">
+    <button onclick="byName()">Submit By Name</button>
+
+    <h3>Form using DOM</h3>
+    <form name="myForm">
+    <h4>Enter username:</h4><input type="text" name="uname">
+    <h4>Enter Password:</h4><input type="text" name="pword">
+    <button onclick="f()">Submit form</button>
+    </form>
+
+    <script>
+        // getElementById()
+        function byId()
+        {
+            var txt = document.getElementById("myText");
+            alert(txt.value);
+        }
+        // getElementsByName()
+        function byName()
+        {
+            var a = document.getElementsByName("myText")[0];
+            alert(a.value);
+        }
+
+        //Forms using DOM
+        function f()
+        {
+        var b = document.forms["myForm"];
+        var u = b.uname.value;
+        var p = b.pword.value;
+        if(u=="admin" && p=="123")
+        {
+        alert("valid");
+        }
+        else
+        {
+        alert("Invalid");
+        }
+        }
+    </script>
+
+</body>
+</html>
+
