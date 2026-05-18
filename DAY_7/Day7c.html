@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="mybody">
+    <script>
+setTimeout(callme,2000);
+function callme() {
+alert('Welcome in ASOIT');
+}
+
+setInterval(callme,2000);
+function callme() {
+alert('Welcome in ASOIT');
+}
+t = setTimeout(callme, 3000);
+clearTimeout(t);
+a = setInterval(callme, 3000);
+clearInterval(a);
+var colors = ["red","green","blue","pink","black","orange"];
+var mybody = document.getElementById("mybody");
+var i=0;
+setInterval(()=>{
+mybody.style.backgroundColor = colors[i];
+++i;
+if(i==colors.length)
+{
+i=0;
+}
+},500)
+</script>
+</body>
+</html>
