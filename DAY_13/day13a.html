@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi suscipit eaque at quod vel sapiente laborum atque unde, veniam est a explicabo eos quas fuga delectus. Praesentium nisi minus a.</p>
+
+    <button type="button" id="hide">Hide</button>
+    <button type="button" id="show">Show</button>
+    <button type="button" id="toggle">Toggle</button>
+    <button type="button" id="in">Fade in</button>
+    <button type="button" id="out">Fade out</button>
+    <button type="button" id="up">Slide Up</button>
+    <button type="button" id="down">Slide Down</button>
+    <button type="button" id="slideToggle">Slide Toggle</button>
+
+
+   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <script>
+
+        $(document).ready(function() {
+    $("#hide").click(function() {
+        $("#p1").hide();
+    });
+
+    $("#show").click(function() {
+        $("#p1").show();
+    });
+
+    $("#toggle").click(function() {
+        $("#p1").toggle();
+    });
+
+    $("#in").click(function() {
+        $("#p1").fadeIn();
+    });
+
+    $("#out").click(function() {
+        $("#p1").fadeOut();
+    });
+
+    $("#up").click(function() {
+        $("#p1").slideUp(1000);
+    });
+
+    $("#down").click(function() {
+        $("#p1").slideDown(1000);
+    });
+
+    $("#slideToggle").click(function() {
+        $("#p1").slideToggle(1000);
+    });
+
+});
+
+
+
+    </script>
+</body>
+</html>
