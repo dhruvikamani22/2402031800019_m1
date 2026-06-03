@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Hide, Show, Click, and Text Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        #secret-text { display: none; margin-top: 15px; font-weight: bold; color: green; }
+        button { padding: 10px 20px; font-size: 16px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <h2>jQuery Interactive Demo</h2>
+    
+    <button id="toggle-btn">Show Secret Text</button>
+
+    <p id="secret-text">This is the hidden text that you just revealed!</p>
+
+    <script>
+        $(document).ready(function() {
+
+            $("#toggle-btn").click(function() {
+                
+                if ($("#secret-text").is(":hidden")) {
+                   
+                    $("#secret-text").show();
+                    
+                    $(this).text("Hide Secret Text");
+                    
+                } else {
+                    
+                    $("#secret-text").hide();
+                    
+                    $(this).text("Show Secret Text");
+                }
+
+            });
+        });
+    </script>
+
+</body>
+</html>

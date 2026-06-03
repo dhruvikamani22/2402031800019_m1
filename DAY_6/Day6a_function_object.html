@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>Date object in javascript</h4>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        let welcome=function(name){
+            return `Hello and welcome ${name}`;
+        }
+        console.log(welcome("hello world"));
+
+        //JavaScript - Arrow Function
+        //Arrow Function with Multiple Argument
+        let sum = (a, b) => {
+        let result = a + b;
+        return result;
+        }
+        let result1 = sum(5,7);
+        console.log(result1); // 12
+        //Arrow Function with No Argument
+        let greet = () => {
+        console.log('Hello');
+        }
+        greet(); // Hello
+
+        // Built-In Functions
+         document.write("<h4> Built-In Functions in JavaScript</h4>");
+        document.write("<br> eval('3 + 4'): " + eval("3 + 4")); // eval()
+        document.write("<br> isFinite(100): " + isFinite(100));// isFinite()
+        document.write("<br> isFinite(Infinity): " + isFinite(Infinity));// isFinite()
+        document.write("<br> isNaN('Hello'): " + isNaN("Hello"));// isNaN()
+        document.write("<br> isNaN(123): " + isNaN(123));// isNaN()
+        // parseInt()
+        document.write("<br> parseInt('3 chances'): " + parseInt("3 chances"));
+        document.write("<br> parseInt('5 alive'): " + parseInt("5 alive"));
+        document.write("<br> parseInt('How are you'): " + parseInt("How are you"));
+        // parseFloat()
+        document.write("<br> parseFloat('3e-1 xyz'): " + parseFloat("3e-1 xyz"));
+        document.write("<br> parseFloat('13.5 abc'): " + parseFloat("13.5 abc"));
+
+
+        //Math Object in JavaScript
+        document.write("<h4>Math Object in JavaScript</h4>");
+        document.writeln(Math.E);   // Euler's number(approx.2.718)
+        var a = Math.pow(2,3);
+        document.writeln("<br>"+a);    // 8
+        var num = Math.random();
+        document.writeln("<br>"+num)    // 0.8124078072293648
+        var num2 = parseInt(1 + (Math.random() * 100));
+        document.writeln("<br>"+num2); // Random Number betwween 1 to 100
+        document.write("<br>"+Math.ceil(2.7)); // 3
+        document.write("<br>"+Math.floor(2.7));    // 2
+        document.write("<br>"+Math.round(2.7));    // 3
+
+        //Date object
+        const d= new Date();
+        document.getElementById("demo").innerHTML=d;
+        const d1= new Date(2022,6,31,10,33,30,0);
+        document.getElementById("demo1").innerHTML=d1;
+
+        //Creating objects using new Object()
+        var person = new Object();
+        // Assign fields to object "person"
+        person.firstName = "Dhruvi";
+        person.lastName = "Kamani";
+        // Assign a method to object "person"
+        person.sayHi = ()=>{
+        alert("Welcome " + person.firstName + " " + person.lastName)
+        }
+        person.sayHi(); // Call the method in "person"
+
+
+        //Creating objects using Literal Notation
+        var person1= {firstname: "Sandip", lastname: "Patel",
+        sayHi : function()
+        {
+        alert("Hi! " + person1.firstname + " " + person1.lastname);
+        }
+        }
+        person1.sayHi(); // Call the method in "person"
+
+    </script>
+</body>
+</html>

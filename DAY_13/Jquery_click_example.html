@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery example</title>
+</head>
+<body>
+
+    <p id="p1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci repellendus voluptatum unde, cumque ex sapiente odio nobis! Eum rem ducimus harum cupiditate sapiente laboriosam neque quia! Est, reprehenderit ab.</p>
+    <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt repellendus eum ipsam adipisci expedita error quisquam voluptates sint corrupti ad maiores totam corporis, soluta doloribus obcaecati quia fuga, reiciendis aperiam?</p>
+    <p id="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt repellendus eum ipsam adipisci expedita error quisquam voluptates sint corrupti ad maiores totam corporis, soluta doloribus obcaecati quia fuga, reiciendis aperiam?</p>
+    <p id="p4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt repellendus eum ipsam adipisci expedita error quisquam voluptates sint corrupti ad maiores totam corporis, soluta doloribus obcaecati quia fuga, reiciendis aperiam?</p>
+    <p id="p5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt repellendus eum ipsam adipisci expedita error quisquam voluptates sint corrupti ad maiores totam corporis, soluta doloribus obcaecati quia fuga, reiciendis aperiam?</p>
+    <input type="text" placeholder="enter any text" id="abc">
+    <button type="button" id="xyz">
+        <!-- onclick="alert('Action Triggered!')" -->
+  Click Me
+</button>
+<div id="msg" style="margin-top: 200px;"></div>
+<!-- <button type="submit">Log In</button> -->
+ <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+ <script>
+    // $("#xyz").click(function(){
+    //     var dk=$("#abc").val();
+    //     alert(dk);
+    // });
+    // $(document).ready(function(){
+    //     alert("page loaded!");
+    // });
+
+$(document).ready(function() {
+    $("#xyz").click(function() {
+        var dk = $("#abc").val();
+        $("#msg").text(dk);
+        $("#msg").html("<b>your age is </b>" + dk);
+    });
+});
+
+$("#p1").css("color","red");
+$("#p1").css({
+    color:"red",
+    background:"blue"
+});
+$("#p2").hide();
+$("#p2").show();
+
+</script>
+</body>
+</html>
